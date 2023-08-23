@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "jovinka.hartanto@izeno.com"
     },
-    "lastModifiedOn": 1692780509234,
+    "lastModifiedOn": 1692780901440,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -69,7 +69,10 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"record_id","type":"string"},
+      {"name":"label","type":"string"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
