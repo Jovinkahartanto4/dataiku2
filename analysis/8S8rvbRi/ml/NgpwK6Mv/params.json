@@ -143,7 +143,7 @@
     "earlyStopping": {
       "enabled": true,
       "minDelta": 0.0,
-      "patience": 5
+      "patience": 3
     },
     "processCountPerNode": 1,
     "gpuParams": {
