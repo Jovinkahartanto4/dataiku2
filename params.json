@@ -15,7 +15,8 @@
   "additionalDashboardUsers": {
     "users": []
   },
-  "tutorialProject": false,
+  "tutorialProject": true,
+  "tutorialId": "TUT_OBJECT_DETECTION",
   "settings": {
     "flowAnchorSourcesAndSinks": true,
     "flowDisplaySettings": {
@@ -139,7 +140,8 @@
     },
     "dkuProperties": []
   },
-  "name": "Object Detection without Code (Tutorial)",
+  "name": "Object Detection without Code (Tutorial) for jovinka.hartanto",
+  "projectStatus": "Sandbox",
   "imgPattern": 8,
   "showInitials": false,
   "metrics": {
@@ -198,11 +200,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "jovinka.hartanto@izeno.com"
     },
-    "lastModifiedOn": 1692780019763,
+    "lastModifiedOn": 1692780021867,
     "extendedProperties": {}
   },
   "creationTag": {
