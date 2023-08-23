@@ -11,7 +11,25 @@
   "hasSetupSection": false,
   "owner": "jovinka.hartanto@izeno.com",
   "permissionsVersion": "V2",
-  "permissions": [],
+  "permissions": [
+    {
+      "group": "space_administrators",
+      "admin": true,
+      "readProjectContent": false,
+      "writeProjectContent": false,
+      "exportDatasetsData": false,
+      "readDashboards": false,
+      "writeDashboards": false,
+      "moderateDashboards": false,
+      "publishToDataCollections": false,
+      "shareToWorkspaces": false,
+      "runScenarios": false,
+      "manageDashboardAuthorizations": false,
+      "manageExposedElements": false,
+      "manageAdditionalDashboardUsers": false,
+      "executeApp": false
+    }
+  ],
   "additionalDashboardUsers": {
     "users": []
   },
@@ -200,11 +218,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
-      "login": "jovinka.hartanto@izeno.com"
+      "login": "api:JTLGP7V3G8RJ0UH0"
     },
-    "lastModifiedOn": 1692780021867,
+    "lastModifiedOn": 1692781207367,
     "extendedProperties": {}
   },
   "creationTag": {
