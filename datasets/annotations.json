@@ -60,18 +60,20 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "admin"
+      "login": "jovinka.hartanto@izeno.com"
     },
-    "lastModifiedOn": 1682354804112
+    "lastModifiedOn": 1692780375986,
+    "extendedProperties": {}
   },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1682354803768
+    "lastModifiedOn": 1682354803768,
+    "extendedProperties": {}
   },
   "tags": [],
   "params": {
@@ -139,6 +141,7 @@
           "samplingMethod": "FULL",
           "maxRecords": -1,
           "targetRatio": 0.02,
+          "ascending": true,
           "withinFirstN": -1,
           "maxReadUncompressedBytes": -1
         }
@@ -172,5 +175,22 @@
       "checks": []
     }
   },
-  "customFields": {}
+  "customFields": {},
+  "imageViewSettings": {
+    "enabled": true,
+    "defaultViewOnExplore": false,
+    "managedFolderSmartId": "jGYkNksn",
+    "pathColumn": "record_id",
+    "annotationParams": {
+      "enabled": true,
+      "annotationType": "OBJECT_DETECTION",
+      "annotationColumn": "label",
+      "annotationCategories": [
+        "8266_ESP",
+        "Heltec_ESP32_Lora",
+        "Arduino_Nano",
+        "Raspberry_Pi_3"
+      ]
+    }
+  }
 }
