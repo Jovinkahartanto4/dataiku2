@@ -1,0 +1,34 @@
+{
+    "pages": [
+        {
+            "id": "rQ9TznY",
+            "grid": {
+                "tiles": []
+            },
+            "showTitle": false
+        }
+    ],
+    "owner": "admin",
+    "listed": true,
+    "name": "Object Detection without Code (Tutorial)'s default dashboard",
+    "showGrid": true,
+    "versionTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+            "login": "admin"
+        },
+        "lastModifiedOn": 1682354569775
+    },
+    "creationTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+            "login": "admin"
+        },
+        "lastModifiedOn": 1682354569775
+    },
+    "tags": [],
+    "customFields": {},
+    "checklists": {
+        "checklists": []
+    }
+}
