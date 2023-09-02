@@ -1,0 +1,59 @@
+{
+  "objectDetectionIOUConflictThreshold": 0.7,
+  "owner": "jovinka.hartanto@izeno.com",
+  "name": "label_images_files",
+  "type": "OBJECT_DETECTION",
+  "labelColumnName": "labels",
+  "extraColumns": [],
+  "inputs": {
+    "metadata": {
+      "items": [
+        {
+          "ref": "images_files"
+        }
+      ]
+    },
+    "data": {
+      "items": [
+        {
+          "ref": "jGYkNksn"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "main": {
+      "items": [
+        {
+          "ref": "images_label_test"
+        }
+      ]
+    }
+  },
+  "classes": [],
+  "instructions": "",
+  "minNbAnnotatorsPerRecord": 1,
+  "autoValidateAnswers": false,
+  "permissions": [],
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jovinka.hartanto@izeno.com"
+    },
+    "lastModifiedOn": 1693679989678,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jovinka.hartanto@izeno.com"
+    },
+    "lastModifiedOn": 1693679989678,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

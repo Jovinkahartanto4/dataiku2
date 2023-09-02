@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "jovinka.hartanto@izeno.com"
     },
-    "lastModifiedOn": 1693679986180,
+    "lastModifiedOn": 1693679989683,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -46,11 +46,13 @@
   },
   "tags": [],
   "params": {
+    "labelingTaskId": "CPCtAiCcgS",
+    "labelingTaskType": "OBJECT_DETECTION",
     "view": "VERIFIED_ONLY"
   },
   "schema": {
     "columns": [],
-    "userModified": true
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
@@ -132,5 +134,16 @@
       "checks": []
     }
   },
-  "customFields": {}
+  "customFields": {},
+  "imageViewSettings": {
+    "enabled": true,
+    "defaultViewOnExplore": true,
+    "managedFolderSmartId": "jGYkNksn",
+    "annotationParams": {
+      "enabled": true,
+      "annotationType": "OBJECT_DETECTION",
+      "annotationColumn": "labels",
+      "annotationCategories": []
+    }
+  }
 }
