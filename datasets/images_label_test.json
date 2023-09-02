@@ -29,11 +29,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "jovinka.hartanto@izeno.com"
     },
-    "lastModifiedOn": 1693679992391,
+    "lastModifiedOn": 1693680051509,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -150,7 +150,9 @@
       "enabled": true,
       "annotationType": "OBJECT_DETECTION",
       "annotationColumn": "labels",
-      "annotationCategories": []
+      "annotationCategories": [
+        "A"
+      ]
     }
   }
 }

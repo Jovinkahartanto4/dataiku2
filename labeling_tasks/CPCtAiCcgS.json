@@ -31,17 +31,33 @@
       ]
     }
   },
-  "classes": [],
+  "classes": [
+    {
+      "key": "A",
+      "value": "test_a"
+    }
+  ],
   "instructions": "",
   "minNbAnnotatorsPerRecord": 1,
   "autoValidateAnswers": false,
-  "permissions": [],
+  "permissions": [
+    {
+      "group": "designers",
+      "annotate": true,
+      "review": false
+    },
+    {
+      "user": "jovinka.hartanto@izeno.com",
+      "annotate": true,
+      "review": false
+    }
+  ],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "jovinka.hartanto@izeno.com"
     },
-    "lastModifiedOn": 1693679992389,
+    "lastModifiedOn": 1693680051508,
     "extendedProperties": {}
   },
   "creationTag": {
