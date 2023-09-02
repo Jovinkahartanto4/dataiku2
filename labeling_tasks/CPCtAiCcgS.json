@@ -3,6 +3,7 @@
   "owner": "jovinka.hartanto@izeno.com",
   "name": "label_images_files",
   "type": "OBJECT_DETECTION",
+  "idColumn": "path",
   "labelColumnName": "labels",
   "extraColumns": [],
   "inputs": {
@@ -36,11 +37,11 @@
   "autoValidateAnswers": false,
   "permissions": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "jovinka.hartanto@izeno.com"
     },
-    "lastModifiedOn": 1693679989678,
+    "lastModifiedOn": 1693679992389,
     "extendedProperties": {}
   },
   "creationTag": {
