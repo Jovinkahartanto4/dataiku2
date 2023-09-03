@@ -35,6 +35,10 @@
     {
       "key": "A",
       "value": "test_a"
+    },
+    {
+      "key": "B",
+      "value": "test_b"
     }
   ],
   "instructions": "",
@@ -53,11 +57,11 @@
     }
   ],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "jovinka.hartanto@izeno.com"
     },
-    "lastModifiedOn": 1693680051508,
+    "lastModifiedOn": 1693730507466,
     "extendedProperties": {}
   },
   "creationTag": {
