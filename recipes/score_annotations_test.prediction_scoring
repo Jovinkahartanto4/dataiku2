@@ -1,0 +1,14 @@
+{
+  "overrideModelSpecifiedConfidenceThreshold": false,
+  "keptInputColumns": [],
+  "perDeviceBatchSize": 2,
+  "predictionType": "DEEP_HUB_IMAGE_OBJECT_DETECTION",
+  "outputModelMetadata": false,
+  "backendType": "DEEP_HUB",
+  "filterInputColumns": false,
+  "forcedConfidenceThreshold": 0.0,
+  "useGPU": false,
+  "gpuList": [
+    0
+  ]
+}
