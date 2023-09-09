@@ -1,0 +1,317 @@
+{
+  "savedModelType": "DSS_MANAGED",
+  "publishPolicy": "UNCONDITIONAL",
+  "rebuildBehavior": "EXPLICIT",
+  "name": "Object detection on annotations_train",
+  "contentType": "prediction/deep_hub",
+  "activeVersion": "initial",
+  "inlineVersions": [],
+  "conditionalOutputs": [],
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "lastExportedFrom": "A-TUT_OBJECT_DETECTION-8S8rvbRi-NgpwK6Mv-s2-pp1-m1",
+  "metrics": {
+    "probes": [],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "partition": "NP",
+      "columns": [],
+      "metrics": [
+        "reporting:BUILD_DURATION"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "partition": "NP",
+      "checks": []
+    }
+  },
+  "miniTask": {
+    "taskType": "PREDICTION",
+    "predictionType": "DEEP_HUB_IMAGE_OBJECT_DETECTION",
+    "modeling": {
+      "pretrainedModel": "FASTERRCNN",
+      "dummy": false,
+      "type": "DEEP_HUB_IMAGE_OBJECT_DETECTION",
+      "metrics": {
+        "evaluationMetric": "AVERAGE_PRECISION_IOU50",
+        "confidenceScoreThresholdOptimMetric": "F1"
+      },
+      "modelOptimizationSplitParams": {
+        "trainSplitRatio": 0.8,
+        "seed": 1337
+      },
+      "learningRate": 1.0E-4,
+      "nbFinetunedLayers": 0,
+      "perDeviceBatchSize": 2,
+      "epochs": 50,
+      "weightDecay": 0.0,
+      "optimizer": "ADAM",
+      "lrScheduler": "PLATEAU",
+      "earlyStopping": {
+        "enabled": true,
+        "minDelta": 0.0,
+        "patience": 5
+      },
+      "processCountPerNode": 1,
+      "gpuParams": {
+        "useGPU": false,
+        "gpuList": [
+          0
+        ]
+      },
+      "augmentationParams": {
+        "colorJitter": {
+          "contrast": 0.2,
+          "brightness": 0.2,
+          "hue": 0.2,
+          "enabled": true,
+          "probability": 1.0
+        },
+        "affine": {
+          "verticalFlip": {
+            "enabled": false,
+            "probability": 0.5
+          },
+          "horizontalFlip": {
+            "enabled": false,
+            "probability": 0.5
+          },
+          "rotate": {
+            "maxRotation": 30.0,
+            "enabled": true,
+            "probability": 1.0
+          }
+        },
+        "crop": {
+          "minKeptRatio": 0.75,
+          "preserveAspectRatio": true,
+          "enabled": true,
+          "probability": 1.0
+        }
+      },
+      "enableParallelDataLoading": false,
+      "numWorkers": 2
+    },
+    "targetVariable": "label",
+    "diagnosticsSettings": {
+      "enabled": true,
+      "settings": [
+        {
+          "type": "ML_DIAGNOSTICS_DATASET_SANITY_CHECKS",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_MODELING_PARAMETERS",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_RUNTIME",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_REPRODUCIBILITY",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_TRAINING_OVERFIT",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_LEAKAGE_DETECTION",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_MODEL_CHECK",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_ML_ASSERTIONS",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_ABNORMAL_PREDICTIONS_DETECTION",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_SCORING_DATASET_SANITY_CHECKS",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_EVALUATION_DATASET_SANITY_CHECKS",
+          "enabled": true
+        },
+        {
+          "type": "ML_DIAGNOSTICS_TIMESERIES_RESAMPLING_CHECKS",
+          "enabled": true
+        }
+      ]
+    },
+    "backendType": "DEEP_HUB",
+    "maxConcurrentModelTraining": 2,
+    "envSelection": {
+      "envMode": "EXPLICIT_ENV",
+      "envName": "INTERNAL_object_detection_v1"
+    },
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    },
+    "sparkParams": {
+      "sparkConf": {
+        "inheritConf": "default",
+        "conf": []
+      },
+      "sparkUseGlobalMetastore": false,
+      "sparkPreparedDFStorageLevel": "MEMORY_AND_DISK",
+      "sparkRepartitionNonHDFS": 1,
+      "pipelineAllowStart": true,
+      "pipelineAllowMerge": true,
+      "sparkExecutionEngine": "SPARK_SUBMIT"
+    },
+    "sparkCheckpoint": "NONE",
+    "predictionDisplayScript": {
+      "steps": [],
+      "maxProcessedMemTableBytes": -1,
+      "columnsSelection": {
+        "mode": "ALL"
+      },
+      "columnWidthsByName": {},
+      "columnUseScientificNotationByName": {},
+      "coloring": {
+        "scheme": "MEANING_AND_STATUS",
+        "individualColumns": [],
+        "valueColoringMode": "HASH"
+      },
+      "sorting": [],
+      "analysisColumnData": {},
+      "explorationSampling": {
+        "selection": {
+          "maxRecordsForDisplay": -1,
+          "maxStoredBytes": -1,
+          "timeout": -1,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "maxRecords": 10000,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
+      "vizSampling": {
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
+      "exploreUIParams": {},
+      "globalSearchQuery": "",
+      "explorationFilters": [],
+      "previewMode": "ALL_ROWS"
+    },
+    "predictionDisplayCharts": [],
+    "labels": []
+  },
+  "lastTrainIndex": 1,
+  "lastTrainJobId": "",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jovinka.hartanto@izeno.com"
+    },
+    "lastModifiedOn": 1694276908527,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jovinka.hartanto@izeno.com"
+    },
+    "lastModifiedOn": 1694276908527,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
