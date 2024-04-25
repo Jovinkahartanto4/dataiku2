@@ -44,21 +44,13 @@
     "main": {
       "items": [
         {
-          "ref": "annotations_test_scored",
+          "ref": "annotation_scored",
           "appendMode": false
         }
       ]
     }
   },
   "labels": [],
-  "versionTag": {
-    "versionNumber": 1,
-    "lastModifiedBy": {
-      "login": "jovinka.hartanto@izeno.com"
-    },
-    "lastModifiedOn": 1694277074071,
-    "extendedProperties": {}
-  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {

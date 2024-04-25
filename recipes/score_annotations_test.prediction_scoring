@@ -6,9 +6,16 @@
   "outputModelMetadata": false,
   "backendType": "DEEP_HUB",
   "filterInputColumns": false,
-  "forcedConfidenceThreshold": 0,
-  "useGPU": false,
-  "gpuList": [
-    0
-  ]
+  "gpuConfig": {
+    "disabledCapabilities": [],
+    "params": {
+      "perGPUMemoryFraction": 0.5,
+      "gpuAllowGrowth": false,
+      "useGpu": false,
+      "gpuList": [
+        0
+      ]
+    }
+  },
+  "forcedConfidenceThreshold": 0
 }
