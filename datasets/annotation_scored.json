@@ -61,7 +61,11 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"record_id","type":"string"},
+      {"name":"label","type":"string"},
+      {"name":"prediction","type":"string"}
+    ],
     "userModified": true
   },
   "dkuProperties": [],
