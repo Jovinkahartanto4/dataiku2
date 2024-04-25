@@ -96,6 +96,9 @@
     "container": {
       "containerMode": "INHERIT"
     },
+    "containerForVisualRecipesWorkloads": {
+      "containerMode": "INHERIT"
+    },
     "datasetsCreationSettings": {
       "useGlobal": true,
       "preferedStorageFormats": "CSV_ESCAPING_NOGZIP_FORHIVE,CSV_EXCEL_GZIP,PARQUET_HIVE",
@@ -123,11 +126,6 @@
     },
     "k8sCluster": {
       "clusterMode": "INHERIT"
-    },
-    "llmSettings": {
-      "offerDolly7B": true,
-      "offerFalcon7BInstruct": true,
-      "additionalHuggingFaceModels": []
     },
     "virtualWebAppBackendSettings": {
       "mode": "INHERIT",
@@ -216,14 +214,6 @@
     "displayedState": {
       "checks": []
     }
-  },
-  "versionTag": {
-    "versionNumber": 9,
-    "lastModifiedBy": {
-      "login": "jovinka.hartanto@izeno.com"
-    },
-    "lastModifiedOn": 1693680211723,
-    "extendedProperties": {}
   },
   "creationTag": {
     "versionNumber": 0,
