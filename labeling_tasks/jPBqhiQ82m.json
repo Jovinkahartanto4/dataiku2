@@ -3,6 +3,7 @@
   "owner": "jovinka.hartanto@izeno.com",
   "name": "label_images_files",
   "type": "OBJECT_DETECTION",
+  "idColumn": "path",
   "labelColumnName": "labels",
   "extraColumns": [],
   "inputs": {
