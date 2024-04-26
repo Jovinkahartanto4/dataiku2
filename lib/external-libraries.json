@@ -4,6 +4,10 @@
       "remote": "git@github.com:Jovinkahartanto4/dataiku2.git",
       "checkout": "refs/heads/main",
       "remotePath": "",
+      "lastHash": "b0080abfa6ff1e4770c5bd39e10409eb5a6dcb90",
+      "conflictingFiles": [],
+      "resolvedFiles": [],
+      "faultyHash": "",
       "isDirty": false
     }
   },
