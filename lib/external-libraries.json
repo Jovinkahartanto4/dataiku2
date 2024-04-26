@@ -1,7 +1,15 @@
 {
-  "gitReferences": {},
+  "gitReferences": {
+    "jovinka": {
+      "remote": "git@github.com:Jovinkahartanto4/dataiku2.git",
+      "checkout": "refs/heads/main",
+      "remotePath": "",
+      "isDirty": false
+    }
+  },
   "pythonPath": [
-    "python"
+    "python",
+    "jovinka"
   ],
   "rsrcPath": [
     "R"
